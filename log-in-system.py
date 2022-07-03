@@ -9,7 +9,7 @@ token = '' # here you put your bot token .
 tele = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={ID}&text=your code is : {code}'
 req = requests.get(tele).text
 if '"ok":true,"result"' in req:
-    print('Your code was sended !')
+    print('Your code was sent !')
 else:
     print('Error')
     exit()
